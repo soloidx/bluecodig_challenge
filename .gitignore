@@ -333,3 +333,4 @@ tags
 # End of https://www.toptal.com/developers/gitignore/api/python,osx,vim,pycharm+all,visualstudiocode
 
 app.db
+test.db

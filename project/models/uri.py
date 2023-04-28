@@ -10,3 +10,4 @@ class Uri(Base):
     origin = Column(String, unique=True)
     short_code = Column(String, unique=True, index=True)
     count = Column(Integer, default=0)
+    title = Column(String, default="")

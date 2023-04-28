@@ -13,12 +13,16 @@ typer = "^0.7.0"
 uvicorn = {extras = ["standard"], version = "^0.21.1"}
 sqlalchemy = "^2.0.11"
 alembic = "^1.10.4"
+beautifulsoup4 = "^4.12.2"
+psycopg-binary = "^3.1.8"
+psycopg2-binary = "^2.9.6"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
 pytest = "^7.3.1"
 httpx = "^0.24.0"
 sqlalchemy-stubs = "^0.4"
+types-beautifulsoup4 = "^4.12.0.3"
 
 [build-system]
 requires = ["poetry-core"]

@@ -2,6 +2,9 @@
 import typer
 import uvicorn  # type: ignore
 
+from project.crud import analyze_pages
+from project.deps import get_db_context
+
 manager = typer.Typer()
 
 
@@ -13,6 +16,12 @@ def runserver(reload: bool = True):
         port=8000,
         reload=reload,
     )
+
+
+@manager.command()
+def analyze():
+    with get_db_context() as db:
+        analyze_pages(db)
 
 
 if __name__ == "__main__":

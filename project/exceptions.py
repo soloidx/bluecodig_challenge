@@ -1,0 +1,2 @@
+class URIDoesNotExistException(Exception):
+    pass
